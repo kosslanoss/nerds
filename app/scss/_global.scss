@@ -14,3 +14,12 @@ body {
   padding: 0 10px;
 }
 
+.button {
+  padding-top: 17px;
+  padding-bottom:  15px;
+  background-color: $accent;
+  border-radius: 3px;
+  color: $color-white;
+  text-transform: uppercase;
+}
+

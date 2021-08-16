@@ -58,5 +58,25 @@
   }
 }
 
+.hero {
+  background-color: $color-grey;
+  &__title {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 1;
+    color: $title;
+  }
+  &__btn {
+    padding-left: 54px;
+    padding-right: 54px;
+    transition: background-color 0.5s, color 0.5s;
+    &:hover {
+      background-color: $color-white;
+      color: $accent;
+    }
+  }
+
+}
+
 
 @import 'media';
