@@ -1,6 +1,6 @@
 $(function(){
 
-  $('.hero__slider').slick({
+  $('.hero__inner').slick({
     dots: true,
     arrows: false
   });
