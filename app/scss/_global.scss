@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1160px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -19,7 +19,7 @@ body {
   border-radius: 3px;
   color: $color-white;
   text-transform: uppercase;
-  transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s, border-color 0.5s;
   cursor: pointer;
   border: solid 2px transparent;
   appearance: none;
