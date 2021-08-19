@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 .header {
@@ -114,7 +115,7 @@
     margin-bottom: 38px;
   }
 
-  &__btn {
+  &__link {
     padding-left: 54px;
     padding-right: 54px;
   }
