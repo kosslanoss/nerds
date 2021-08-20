@@ -95,6 +95,7 @@
 
 .hero {
   background-color: $grey-lightest;
+  margin-bottom: -26px;
   
   &__item {
     display: flex;
@@ -121,6 +122,56 @@
     padding-right: 54px;
   }
 
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    transform: translateY(-122px);
+
+    li {
+      margin-right: 17px;
+      
+      button{
+        padding: 0;
+        font-size: 0;
+        background-color: $color-white;
+        width: 18px;
+        height: 18px;
+        border: 2px solid transparent;
+        border-radius: 50%;
+      }
+      
+      &.slick-active {
+        transition: box-shadow 0.5s, color 0.5s, border 0.5s;
+
+        button {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          color: transparent;
+          border: 2px solid $grey-darker;
+          box-shadow: 0 0 0 5px $color-white;
+        }
+      }
+    }
+  }
+
+}
+
+.services {
+
+  &__blocks {
+    display: flex;
+  }
+
+  &__title {
+    position: relative;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url(../images/services-red.png);
+    }
+  }
 }
 
 .footer {
