@@ -14,7 +14,7 @@ body {
 
 .button {
   padding-top: 17px;
-  padding-bottom:  15px;
+  padding-bottom: 15px;
   background-color: $accent;
   border-radius: 3px;
   color: $color-white;
@@ -24,13 +24,16 @@ body {
   border: solid 2px transparent;
   appearance: none;
   outline: transparent;
+
   &:focus {
     border: solid 2px $default;
   }
+
   &:hover {
     background-color: $color-white;
     color: $accent;
   }
+
   &:active {
     background-color: $grey-lightest;
   }

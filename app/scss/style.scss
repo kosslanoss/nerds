@@ -95,7 +95,7 @@
 
 .hero {
   background-color: $grey-lightest;
-  margin-bottom: -26px;
+  height: 430px;
   
   &__item {
     display: flex;
@@ -157,20 +157,94 @@
 
 }
 
-.services {
 
+.services {
+  padding: 80px 0 95px;
+  
   &__blocks {
     display: flex;
   }
 
-  &__title {
+  &__block {
+    margin-right: 140px;
     position: relative;
+  }
+  
+  &__block--red {
     
     &::before {
-      content: "";
+      content: url(../images/services-red.png);
       position: absolute;
-      background-image: url(../images/services-red.png);
     }
+  }
+
+  &__block--green {
+
+    &::before {
+      content: url(../images/services-green.png);
+      position: absolute
+    }
+    
+    .services__link {
+      background-color: $color-green;
+
+      &:focus {
+        border: solid 2px $default;
+      }
+
+      &:hover {
+        background-color: $color-white;
+        color: $accent;
+      }
+
+      &:active {
+        background-color: $grey-lightest;
+      }
+    }
+  }
+
+  &__block--yellow {
+
+    &::before {
+      content: url(../images/services-yellow.png);
+      position: absolute
+    }
+
+    .services__link {
+      background-color: $color-yellow;
+      
+      &:focus {
+        border: solid 2px $default;
+      }
+
+      &:hover {
+        background-color: $color-white;
+        color: $accent;
+      }
+
+      &:active {
+        background-color: $grey-lightest;
+      }
+    }
+  }
+
+  &__title {
+    @extend %roboto-700;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-top: 170px;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    max-width: 260px;
+    margin-bottom: 50px;
+  }
+
+  &__link {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 80px;
   }
 }
 
