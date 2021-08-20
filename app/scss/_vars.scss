@@ -1,0 +1,31 @@
+$default: #283136;
+$accent: #FB565A;
+$title: #000000;
+
+$grey-darkest: #666666;
+$grey-darker: #C1C1C1;
+$grey-light: #E1E1E1;
+$grey-lightest: #EEEEEE;
+
+
+$color-white: #FFFFFF;
+
+$color-green: #00CA74;
+$color-yellow: #EFC849;
+
+%roboto-400{
+  font-family: 'Roboto-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%roboto-500 {
+  font-family: 'Roboto-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%roboto-700 {
+  font-family: 'Roboto-Bold', sans-serif;
+  font-weight: 700;
+}
+
+

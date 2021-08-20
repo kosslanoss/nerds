@@ -1,18 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GULP</title>
+  <title>Nerds</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
 
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.svg" width="160" height="65" alt="Логотип">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link menu__link--active" href="#">Студия</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Клиенты</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Магазин</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="cart">
+          <a class="cart__link" href="#">
+            <img class="cart__img" src="images/cart.svg" width="15" height="15" alt="Корзина кнопка">
+            <span class="cart__num">5</span>
+            Корзина
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__slider">
+          <div class="hero__inner">
+            <div class="hero__item">
+              <div class="hero__content">
+                <h1 class="hero__title">
+                  Долго, дорого, скрупулезно.
+                </h1>
+                <div class="hero__text">
+                  <p>
+                    Математически выверенный дизайн для вашего сайта или мобильного приложения.
+                  </p>
+                </div>
+                <a class="hero__link button" href="#">
+                  Узнать больше
+                </a>
+              </div>
+              <img class="hero__img" src="images/slide.png" alt="Динамичная картинка со смартфонами" width="760"
+                height="431">
+            </div>
+          </div>
+          <div class="hero__inner">
+            <div class="hero__item">
+              <div class="hero__content">
+                <h1 class="hero__title">
+                  Рекламная реклама.
+                </h1>
+                <div class="hero__text">
+                  <p>
+                    Математически выверенный дизайн для вашего сайта или мобильного приложения.
+                  </p>
+                </div>
+                <a class="hero__link button" href="#">
+                  Узнать больше
+                </a>
+              </div>
+              <img class="hero__img" src="images/slide.png" alt="Динамичная картинка со смартфонами" width="760"
+                height="431">
+            </div>
+          </div>
+          <div class="hero__inner">
+            <div class="hero__item">
+              <div class="hero__content">
+                <h1 class="hero__title">
+                  Выгодное предложение.
+                </h1>
+                <div class="hero__text">
+                  <p>
+                    Математически выверенный дизайн для вашего сайта или мобильного приложения.
+                  </p>
+                </div>
+                <a class="hero__link button" href="#">
+                  Узнать больше
+                </a>
+              </div>
+              <img class="hero__img" src="images/slide.png" alt="Динамичная картинка со смартфонами" width="760"
+                height="431">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="container">
+        <div class="services__blocks">
+          <div class="services__block--red services__block">
+            <h3 class="services__title">Веб-сайты</h3>
+            <div class="services__text">
+              <p>
+                Мир никогда не будет прежним после того как увидит сайт!
+              </p>
+            </div>
+            <a class="services__link button" href="#">Заказать</a>
+          </div>
+          <div class="services__block--green services__block">
+            <h3 class="services__title">Приложения</h3>
+            <div class="services__text">
+              <p>
+                Покорите топ-10 приложений в AppStore и Google Play
+              </p>
+            </div>
+            <a class="services__link button" href="#">Заказать</a>
+          </div>
+          <div class="services__block--yellow services__block">
+            <h3 class="services__title">Презентации</h3>
+            <div class="services__text">
+              <p>
+                Вы даже не подозреваете, насколько вы изумительны!
+              </p>
+            </div>
+            <a class="services__link button" href="#">Заказать</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top" style="background-image: url(images/map.png)">
+      <div class="container">
+        <div class="footer__data">
+          <h4 class="footer__name">
+            Nёrds Design Studio
+          </h4>
+          <p class="footer__address">
+            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          </p>
+          <a href="tel:+78122757575" class="footer__phone">тел. +7 (812) 275-75-75</a>
+          <button class="footer__btn button">Напишите нам</button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer__bottom">
+        <div class="social">
+          <ul class="social__links">
+            <li class="social__item">
+              <span class="sr-only">Перейти на страницу в вконтакте</span>
+              <a class="social__link--vk social__link" href="#">
+                <img class="social__icon" src="images/vk-icon.svg" alt="ссылка на вконтакте" width="27" height="16">
+              </a>
+            </li>
+            <li class="social__item">
+              <span class="sr-only">Перейти на страницу в фейсбук</span>
+              <a class="social__link--fb social__link" href="#">
+                <img class="social__icon" src="images/fb-icon.svg" alt="ссылка на фейсбук" width="12" height="22">
+              </a>
+            </li>
+            <li class="social__item">
+              <span class="sr-only">Перейти на страницу в инстаграмм</span>
+              <a class="social__link--instagram social__link" href="#">
+                <img class="social__icon" src="images/insta-icon.svg" alt="ссылка на инстаграмм" width="21" height="21">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__banner">
+          <h3 class="footer__title">
+            <p>Давайте дружить, это выгодно!</p>
+          </h3>
+          <div class="footer__text">
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
 
 
 
 
   <script src="js/main.min.js"></script>
 </body>
+
 </html>

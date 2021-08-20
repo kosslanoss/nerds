@@ -1,0 +1,54 @@
+body {
+  @extend %roboto-400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $default;
+  background-color: $color-white;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.button {
+  padding-top: 17px;
+  padding-bottom: 15px;
+  background-color: $accent;
+  border-radius: 3px;
+  color: $color-white;
+  text-transform: uppercase;
+  transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+  cursor: pointer;
+  border: solid 2px transparent;
+  appearance: none;
+  outline: transparent;
+
+  &:focus {
+    border: solid 2px $default;
+  }
+
+  &:hover {
+    background-color: $color-white;
+    color: $accent;
+  }
+
+  &:active {
+    background-color: $grey-lightest;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
