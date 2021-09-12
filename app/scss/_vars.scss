@@ -1,31 +1,28 @@
 $default: #283136;
-$accent: #FB565A;
 $title: #000000;
 
+$accent: #FB565A;
+$accent-darker: #E74246;
+$accent-darkest: #D7373B;
+
 $grey-darkest: #666666;
-$grey-darker: #C1C1C1;
+$grey-darker: #A6A6A6;
+$grey: #C1C1C1;
 $grey-light: #E1E1E1;
 $grey-lightest: #EEEEEE;
 
 
-$color-white: #FFFFFF;
+$white: #FFFFFF;
+$white-opacity: rgba(255, 255, 255, 0.3);
 
-$color-green: #00CA74;
-$color-yellow: #EFC849;
+$green: #00CA74;
+$green-darker: #00BC6C;
+$green-darkest: #00AA62;
 
-%roboto-400{
-  font-family: 'Roboto-Regular', sans-serif;
-  font-weight: 400;
-}
+$yellow: #EFC849;
+$yellow-darker: #EAB534;
+$yellow-darkest: #E5A722;
 
-%roboto-500 {
-  font-family: 'Roboto-Medium', sans-serif;
-  font-weight: 500;
-}
-
-%roboto-700 {
-  font-family: 'Roboto-Bold', sans-serif;
-  font-weight: 700;
-}
+$roboto: 'Roboto', sans-serif; 
 
 

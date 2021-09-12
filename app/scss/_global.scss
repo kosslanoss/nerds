@@ -1,9 +1,9 @@
 body {
-  @extend %roboto-400;
+  font-family: $roboto;
   font-size: 16px;
   line-height: 1.5;
   color: $default;
-  background-color: $color-white;
+  background-color: $white;
 }
 
 .container {
@@ -17,25 +17,22 @@ body {
   padding-bottom: 15px;
   background-color: $accent;
   border-radius: 3px;
-  color: $color-white;
+  color: $white;
   text-transform: uppercase;
   transition: background-color 0.5s, color 0.5s, border-color 0.5s;
   cursor: pointer;
   border: solid 2px transparent;
   appearance: none;
-  outline: transparent;
 
-  &:focus {
-    border: solid 2px $default;
+  &:focus,
+  &:active {
+    background-color: $accent-darkest;
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    color: $white-opacity;
   }
 
   &:hover {
-    background-color: $color-white;
-    color: $accent;
-  }
-
-  &:active {
-    background-color: $grey-lightest;
+    background-color: $accent-darker;
   }
 }
 
