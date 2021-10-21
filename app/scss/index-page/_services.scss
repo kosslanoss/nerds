@@ -1,0 +1,74 @@
+.services {
+  padding: 80px 0 95px;
+
+  &__blocks {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__block {
+    position: relative;
+
+    &--red::before {
+      content: url(../images/services-red.png);
+      position: absolute;
+    }
+
+    &--green::before {
+      content: url(../images/services-green.png);
+      position: absolute;
+    }
+
+    &--green .services__link {
+      background-color: $green;
+
+      &:focus,
+      &:active {
+        background-color: $green-darkest;
+      }
+
+      &:hover {
+        background-color: $green-darker;
+      }
+      
+    }
+
+    &--yellow::before {
+      content: url(../images/services-yellow.png);
+      position: absolute;
+    }
+
+    &--yellow .services__link {
+      background-color: $yellow;
+
+      &:focus,
+      &:active {
+        background-color: $yellow-darkest;
+      }
+
+      &:hover {
+        background-color: $yellow-darker;
+      }
+    }
+    
+  }
+
+  &__title {
+    font-family: $roboto;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-top: 170px;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    max-width: 300px;
+    margin-bottom: 50px;
+  }
+
+  &__link {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 80px;
+  }
+}
