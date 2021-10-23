@@ -13,7 +13,8 @@
   &__title {
     font-size: 45px;
     line-height: 1;
-    font-family: $roboto500;
+    font-family: $roboto;
+    font-weight: 500;
     color: $title;
     margin-bottom: 32px;
   }
@@ -23,12 +24,38 @@
   }
 
   &__list {
+    position: relative;
+    
+    &-title {
     text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 23px;
+    
+    }
+
+    &-item {
+    
+
+      &::before {
+        content: "";
+        width: 25px;
+        height: 2px;
+        background-color: $accent;
+        position: absolute;
+        transform: translate(-35px, 10px);
+      }
+
+      &:not(:last-child) {
+        padding-bottom: 20px;
+        margin-left: 35px;
+      }
+    }
   }
+  
 
 
   &__info {
-    
+    max-width: 360px;
   }
 
   &__subtitle {
@@ -36,6 +63,11 @@
     text-transform: uppercase;
     font-family: $roboto;
     color: $title;
+    
+    &::before {
+      content: url(../images/about.png);
+
+    }
   }
 
   &__items {
