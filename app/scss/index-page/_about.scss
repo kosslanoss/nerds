@@ -8,6 +8,7 @@
 
   &__content {
     max-width: 650px;
+    padding-top: 45px;
   }
 
   &__title {
@@ -34,7 +35,6 @@
     }
 
     &-item {
-    
 
       &::before {
         content: "";
@@ -51,8 +51,6 @@
       }
     }
   }
-  
-
 
   &__info {
     max-width: 360px;
@@ -63,15 +61,36 @@
     text-transform: uppercase;
     font-family: $roboto;
     color: $title;
+    padding-top: 245px;
+    margin-bottom: 30px;
     
     &::before {
       content: url(../images/about.png);
-
+      transform: translateY(-245px);
+      position: absolute;
     }
   }
 
   &__items {
     display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 100px;
+  }
+
+  &__number {
+    font-size: 45px;
+    font-weight: 700;
+    color: $title;
+
+    &::after {
+      content: "%";
+      font-size: 26px;
+      transform: translate(0px, 8px);
+      position: absolute;
+    }
   }
 
 }
