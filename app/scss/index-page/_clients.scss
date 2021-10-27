@@ -1,8 +1,12 @@
 .clients {
-  padding: 45px 0;
+  padding: 45px;
 
   & .container {
     border-top: solid 2px $grey-lightest;
     border-bottom: solid 2px $grey-lightest;
+  }
+
+  &__items {
+    display: flex;
   }
 }
