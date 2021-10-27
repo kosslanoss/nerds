@@ -8,7 +8,9 @@ $(function(){
 
   $(window).on("scroll", function (){
     var w_top = $(window).scrollTop();
-    var e_top =
+    var e_top = $("#counts").offset().top;
+
+    console.log(w_top + " " + e_top);
     
   });
 
