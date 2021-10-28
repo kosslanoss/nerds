@@ -8,5 +8,7 @@
 
   &__items {
     display: flex;
+    justify-content: space-between;
+    margin: 45px 0;
   }
 }
