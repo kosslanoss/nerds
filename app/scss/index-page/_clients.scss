@@ -1,0 +1,8 @@
+.clients {
+  padding: 45px 0;
+
+  & .container {
+    border-top: solid 2px $grey-lightest;
+    border-bottom: solid 2px $grey-lightest;
+  }
+}

@@ -1,0 +1,45 @@
+.about {
+  padding: 40px 0 45px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 650px;
+  }
+
+  &__title {
+    font-size: 45px;
+    line-height: 1;
+    font-family: $roboto500;
+    color: $title;
+    margin-bottom: 32px;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    text-transform: uppercase;
+  }
+
+
+  &__info {
+    
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: $roboto;
+    color: $title;
+  }
+
+  &__items {
+    display: flex;
+  }
+
+}
