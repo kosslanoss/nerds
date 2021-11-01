@@ -27,19 +27,5 @@
     &:hover {
       opacity: 1;
     }
-
-    // &:not(:last-child) {
-    //   position: relative;
-
-    //   &::after {
-    //     content: "";
-    //     width: 2px;
-    //     height: 52px;
-    //     background-color: $title;
-    //     position: absolute;
-    //     margin-left: 50px;
-    //     display: flex;
-    //   }
-    // }
   }
 }
