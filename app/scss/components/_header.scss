@@ -12,6 +12,14 @@
   }
 }
 
+.logo {
+  transition: opacity 0.2s;
+  &:focus,
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .menu {
 
   &__list {

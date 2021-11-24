@@ -1,8 +1,31 @@
 .clients {
-  padding: 45px 0;
+  margin-bottom: 80px;
 
   & .container {
     border-top: solid 2px $grey-lightest;
     border-bottom: solid 2px $grey-lightest;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 45px 0;
+  }
+
+  &__item {
+    transition: opacity 0.5s, border-color 0.5s;
+    cursor: pointer;
+    appearance: none;
+    opacity: 0.2;
+
+    &:focus,
+    &:active {
+      opacity: 0.1;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }
