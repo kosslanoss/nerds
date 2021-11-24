@@ -20,5 +20,9 @@
     "jquery": "^3.6.0",
     "sass": "^1.37.0",
     "slick-carousel": "^1.8.1"
+  },
+  "dependencies": {
+    "counter": "^0.1.1",
+    "counterup2": "^2.0.2"
   }
 }
