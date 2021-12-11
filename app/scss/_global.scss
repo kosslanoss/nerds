@@ -1,9 +1,20 @@
+html,
 body {
-  font-family: $roboto;
+  height: 100%;
+}
+
+body {
+  @extend %roboto-400;
   font-size: 16px;
   line-height: 1.5;
   color: $default;
   background-color: $white;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
 }
 
 .container {

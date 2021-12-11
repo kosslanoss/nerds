@@ -1,0 +1,14 @@
+.shop {
+  padding: 55px 0 60px;
+
+  &__filters {
+    max-width: 260px;
+  }
+}
+
+.filter__title {
+  @extend %roboto-700;
+  font-size: 18px;
+  color: $title;
+  text-transform: uppercase;
+}

@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "counter": "^0.1.1",
-    "counterup2": "^2.0.2"
+    "counterup2": "^2.0.2",
+    "ion-rangeslider": "^2.3.1"
   }
 }

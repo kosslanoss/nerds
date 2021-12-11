@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nerds</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.svg" width="160" height="65" alt="Логотип">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Студия</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Клиенты</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--active" href="#">Магазин</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__cart" href="#">
+          Корзина
+        </a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <h1 class="sr-only">Nerds — дизайн-студия из Краснодара.</h1>
+    <section class="top">
+      <div class="container">
+        <h2 class="top__title">Магазин готовых шаблонов</h2>
+      </div>
+    </section>
+    <section class="shop">
+      <div class="container">
+        <div class="shop__inner">
+          <div class="shop__filters filter">
+            <div class="filter__item filter-price">
+              <h4 class="filter__title">СТоимость:</h4>
+              <form class="filter-price__form" action="#">
+                <label class="filter-price__label"></label>
+                  <input class="filter-price__input" type="text" name="filter-price__input" value="" data-type="double"
+                    data-min="0" data-max="1000" data-from="200" data-to="500" data-grid="true" />
+                
+              </form>
+
+            </div>
+            <div class="filter__item filter-view">
+              <h4 class="filter__title">Сетка:</h4>
+            </div>
+            <div class="filter__item filter-features">
+              <h4 class="filter__title">Особенности:</h4>
+            </div>
+          </div>
+
+          <div class="shop__content"></div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+  </main>
+  <footer class="footer">
+    <div class="footer__top" style="background-image: url(images/map.png)">
+      <div class="container">
+        <div class="footer__data">
+          <h4 class="footer__name">
+            Nёrds Design Studio
+          </h4>
+          <p class="footer__address">
+            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          </p>
+          <a class="footer__phone" href="tel:+78122757575" >тел. +7 (812) 275-75-75</a>
+          <button class="footer__btn button">Напишите нам</button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer__bottom">
+        <div class="social">
+          <ul class="social__links">
+            <li class="social__item">
+              <span class="sr-only">Перейти на страницу в вконтакте</span>
+              <a class="social__link--fb social__link" href="#">
+                <img class="social__icon" src="images/vk-icon.svg" alt="ссылка на вконтакте" width="12" height="22">
+              </a>
+            </li>
+            <li class="social__item">
+              <span class="sr-only">Перейти на страницу в фейсбук</span>
+              <a class="social__link--fb social__link" href="#">
+                <img class="social__icon" src="images/fb-icon.svg" alt="ссылка на фейсбук" width="12" height="22">
+              </a>
+            </li>
+            <li class="social__item">
+              <span class="sr-only">Перейти на страницу в инстаграмм</span>
+              <a class="social__link--instagram social__link" href="#">
+                <img class="social__icon" src="images/insta-icon.svg" alt="ссылка на инстаграмм" width="21" height="21">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__banner">
+          <h3 class="footer__title">
+            <p>Давайте дружить, это выгодно!</p>
+          </h3>
+          <div class="footer__text">
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="js/main.min.js"></script>
+  
+</body>
+
+</html>

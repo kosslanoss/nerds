@@ -1,0 +1,11 @@
+.top {
+  padding: 75px 0 100px;
+  background-color: $grey-lightest;
+
+  &__title {
+    font-size: 55px;
+    @extend %roboto-500;
+    text-align: center;
+    color: $title;
+  }
+}

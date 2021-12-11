@@ -1,11 +1,19 @@
 $(function(){
 
+
+
+  $('.filter-price__input').ionRangeSlider();
+
+
+  
   $('.hero__slider,.clients__slider').slick({
     dots: true,
     arrows: false,
     fade: true
   });
 
+
+ 
   
   $('.about__counter').each(function () {
     $(this).prop('Counter',0).animate({
