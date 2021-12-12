@@ -71,9 +71,9 @@
     &:hover {
       color: $accent;
     }
-  }
 
-  &__link--active {
-    border-bottom: solid 2px $accent;
+    &--active {
+      border-bottom: solid 2px $accent;
+    }
   }
 }

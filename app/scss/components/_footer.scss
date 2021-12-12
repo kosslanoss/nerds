@@ -1,59 +1,12 @@
 .footer {
+  padding: 75px 0;
 
-  &__top {
-    padding-top: 54px;
-    padding-bottom: 54px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
-  &__data {
-    background-color: $white;
-    padding: 50px;
-    max-width: 320px;
+  &__inner {
     display: flex;
-    flex-direction: column;
-  }
-
-  &__name {
-    margin-bottom: 22px;
-  }
-
-  &__address {
-    max-width: 230px;
-    margin-bottom: 15px;
-    color: $grey-darkest;
-    line-height: 1.1;
-  }
-
-  &__phone {
-    margin-bottom: 30px;
-    color: $grey-darkest;
-    border: solid 2px transparent;
-    transition: border 0.5s, color 0.5s;
-
-    &:focus {
-      border: solid 2px $accent;
-    }
-
-    &:hover {
-      color: $accent;
-    }
-
-    &:active {
-      color: $grey-darkest;
-    }
-  }
-
-  &__btn {
-    display: block;
-    padding-right: 40px;
-    padding-left: 40px;
   }
 
   &__title {
-    font-family: $roboto;
+    @extend %roboto-700;
     font-size: 36px;
     line-height: 1;
     margin-bottom: 10px;

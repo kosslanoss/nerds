@@ -52,21 +52,95 @@
         <div class="shop__inner">
           <div class="shop__filters filter">
             <div class="filter__item filter-price">
-              <h4 class="filter__title">СТоимость:</h4>
+              <h4 class="filter__title filter-price__title">СТоимость:</h4>
               <form class="filter-price__form" action="#">
-                <label class="filter-price__label"></label>
-                  <input class="filter-price__input" type="text" name="filter-price__input" value="" data-type="double"
-                    data-min="0" data-max="1000" data-from="200" data-to="500" data-grid="true" />
-                
+                <label class="filter-price__label">
+                  <input class="filter-price__input" 
+                  type="text" 
+                  name="filter-price" 
+                  data-type="double"
+                  data-min="0" 
+                  data-max="30000" 
+                  data-from="0" 
+                  data-to="15000"
+                  value="" />
+                  <span class="filter-price__number">
+                    от
+                    <span class="filter-price__from"></span>
+                    до
+                    <span class="filter-price__to"></span>
+                  </span>
+                </label>
               </form>
-
             </div>
             <div class="filter__item filter-view">
               <h4 class="filter__title">Сетка:</h4>
+              <form class="filter-view__form" action="#">
+                <label class="filter-view__label">
+                  <div class="filter-view__box">
+                    <input class="filter-view__input" type="checkbox" checked name="filter-view-adaptive" value="adaptive">
+                    <span class="filter-view__checkbox"></span>
+                  </div>
+                  <span class="filter-view__text">Адаптивная</span>
+                </label>
+                <label class="filter-view__label">
+                  <div class="filter-view__box">
+                    <input class="filter-view__input" type="checkbox" name="filter-view-fixed" value="fixed">
+                    <span class="filter-view__checkbox"></span>
+                  </div>
+                  <span class="filter-view__text">Фиксированная</span>
+                </label>
+                <label class="filter-view__label">
+                  <div class="filter-view__box">
+                    <input class="filter-view__input" type="checkbox" name="filter-view-flex" value="flex">
+                    <span class="filter-view__checkbox"></span>
+                  </div>
+                  <span class="filter-view__text">Резиновая</span>
+                </label>
+              </form>
             </div>
             <div class="filter__item filter-features">
               <h4 class="filter__title">Особенности:</h4>
+              <form class="filter-features__form" action="#">
+                <label class="filter-features__label">
+                  <div class="filter-features__box">
+                    <input class="filter-features__input" checked type="checkbox"
+                     name="filter-features-slider" value="Слайдер">
+                     <span class="filter-features__checkbox"></span>
+                  </div>
+                  <span class="filter-features__text">Слайдер</span>
+                </label>
+                <label class="filter-features__label">
+                  <div class="filter-features__box">
+                    <input class="filter-features__input" type="checkbox" name="filter-features-slider" value="Блок преимуществ">
+                    <span class="filter-features__checkbox"></span>
+                  </div>
+                  <span class="filter-features__text">Блок преимуществ</span>
+                </label>
+                <label class="filter-features__label">
+                  <div class="filter-features__box">
+                    <input class="filter-features__input" checked type="checkbox" name="filter-features-slider" value="Новости">
+                    <span class="filter-features__checkbox"></span>
+                  </div>
+                  <span class="filter-features__text">Новости</span>
+                </label>
+                <label class="filter-features__label">
+                  <div class="filter-features__box">
+                    <input class="filter-features__input" type="checkbox" name="filter-features-slider" value="Галерея">
+                    <span class="filter-features__checkbox"></span>
+                  </div>
+                  <span class="filter-features__text">Галерея</span>
+                </label>
+                <label class="filter-features__label">
+                  <div class="filter-features__box">
+                    <input class="filter-features__input" type="checkbox" name="filter-features-slider" value="Корзина">
+                    <span class="filter-features__checkbox"></span>
+                  </div>
+                  <span class="filter-features__text">Корзина</span>
+                </label>
+              </form>
             </div>
+            <button class="shop__filters-btn" type="submit">ПОКАЗАТЬ</button>
           </div>
 
           <div class="shop__content"></div>
@@ -77,56 +151,60 @@
     
 
   </main>
-  <footer class="footer">
-    <div class="footer__top" style="background-image: url(images/map.png)">
+    <section class="map" style="background-image: url(images/map.png);">
       <div class="container">
-        <div class="footer__data">
-          <h4 class="footer__name">
+        <div class="map__data">
+          <h4 class="map__name">
             Nёrds Design Studio
           </h4>
-          <p class="footer__address">
-            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          <p class="map__address">
+            191186, Санкт-Петербург, ул.Б. Конюшенная, д. 19/8
           </p>
-          <a class="footer__phone" href="tel:+78122757575" >тел. +7 (812) 275-75-75</a>
-          <button class="footer__btn button">Напишите нам</button>
+          <a class="map__phone" href="tel:+78122757575" >тел. +7 (812) 275-75-75</a>
+          <button class="map__btn button">Напишите нам</button>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="footer__bottom">
-        <div class="social">
-          <ul class="social__links">
-            <li class="social__item">
-              <span class="sr-only">Перейти на страницу в вконтакте</span>
-              <a class="social__link--fb social__link" href="#">
-                <img class="social__icon" src="images/vk-icon.svg" alt="ссылка на вконтакте" width="12" height="22">
-              </a>
-            </li>
-            <li class="social__item">
-              <span class="sr-only">Перейти на страницу в фейсбук</span>
-              <a class="social__link--fb social__link" href="#">
-                <img class="social__icon" src="images/fb-icon.svg" alt="ссылка на фейсбук" width="12" height="22">
-              </a>
-            </li>
-            <li class="social__item">
-              <span class="sr-only">Перейти на страницу в инстаграмм</span>
-              <a class="social__link--instagram social__link" href="#">
-                <img class="social__icon" src="images/insta-icon.svg" alt="ссылка на инстаграмм" width="21" height="21">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__banner">
-          <h3 class="footer__title">
-            <p>Давайте дружить, это выгодно!</p>
-          </h3>
-          <div class="footer__text">
-            <p>Скидка 10% для друзей из социальных сетей.</p>
+    </section>
+    
+      <footer class="footer">
+        <div class="container">
+        <div class="footer__inner">
+          <div class="social">
+            <ul class="social__links">
+              <li class="social__item">
+                <span class="sr-only">Перейти на страницу в вконтакте</span>
+                <a class="social__link--fb social__link" href="#">
+                  <img class="social__icon" src="images/vk-icon.svg" alt="ссылка на вконтакте" width="12" height="22">
+                </a>
+              </li>
+              <li class="social__item">
+                <span class="sr-only">Перейти на страницу в фейсбук</span>
+                <a class="social__link--fb social__link" href="#">
+                  <img class="social__icon" src="images/fb-icon.svg" alt="ссылка на фейсбук" width="12" height="22">
+                </a>
+              </li>
+              <li class="social__item">
+                <span class="sr-only">Перейти на страницу в инстаграмм</span>
+                <a class="social__link--instagram social__link" href="#">
+                  <img class="social__icon" src="images/insta-icon.svg" alt="ссылка на инстаграмм" width="21"
+                    height="21">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__banner">
+            <div class="footer__title">
+              <p>Давайте дружить, это выгодно!</p>
+            </div>
+            <div class="footer__text">
+              <p>Скидка 10% для друзей из социальных сетей.</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+      </footer>
+    
+
 
 
 
