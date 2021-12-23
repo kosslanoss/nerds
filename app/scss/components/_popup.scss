@@ -59,7 +59,6 @@
     &:active {
       opacity: 10%;
     }
-
   }
 
   &__label {
@@ -89,7 +88,22 @@
     padding: 16px;
     border: 2px solid $grey-darker;
     border-radius: 3px;
+    transition: border-color 0.3s;
+    background-color: $white;
+
+    &:hover {
+      border-color: $grey-darkest;
+    }
+
+    &:focus {
+      border-color: $title;
+
+      &:invalid {
+        border-color: $accent-darker;
+      }
+    }
   }
+  
 
   &__label-text {
     max-width: 760px;
