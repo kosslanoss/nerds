@@ -301,7 +301,6 @@
       </div>
     </section>
   </main>
-  
   <section class="map" style="background-image: url(images/map.png);">
     <div class="container">
       <div class="map__data">
@@ -315,8 +314,34 @@
         <button class="map__btn button">Напишите нам</button>
       </div>
     </div>
+    <div class="popup">
+      <div class="popup__wrapper">
+        <span class="popup__title">
+          Напишите нам
+        </span>
+        <button class="popup__btn-close"></button>
+        <form class="popup__form" action="#">
+          <div class="popup__label-top">
+          <label class="popup__label">
+            <span class="popup__label-desc">Ваше имя:</span>
+            <input class="popup__input" type="text" name="name" placeholder="Имя Фамилия" required>
+          </label>
+          <label class="popup__label">
+            <span class="popup__label-desc">Ваш email:</span>
+            <input class="popup__input" type="email" name="mail" placeholder="email@example.com" required>
+          </label>
+          </div>
+          <label class="popup__label popup__label-text">
+            <span class="popup__label-desc">Текст письма:</span>
+            <input class="popup__input popup__input-text" type="text" name="text" placeholder="В свободной форме" required>
+          </label>
+        </form>
+        <button class="popup__btn-send button" type="submit">
+          Отправить
+        </button>
+      </div>
+    </div>
   </section>
-
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
