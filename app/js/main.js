@@ -41,6 +41,7 @@ $(function(){
   }
 
 
+
   $('.filter-price__input').ionRangeSlider({
     onStart: function (data) {
         $('.filter-price__from').text(data.from);
@@ -60,20 +61,42 @@ $(function(){
     fade: true
   });
 
-
- 
   
-  $('.about__counter').each(function () {
-    $(this).prop('Counter',0).animate({
-      Counter: $(this).text()
-    }, {
-      duration: 3000,
-      easing: 'swing',
-      step:function (now){
-        $(this).text(Math.ceil(now));
-      }
-    });
-  });
+
+var counted = 0;
+$(window).scroll(function() {
+
+  var oTop = $('.about__items').offset().top - window.innerHeight;
+  if (counted == 0 && $(window).scrollTop() > oTop) {
+  $('.about__counter').each(function() {
+  var $this = $(this),
+      countTo = $this.attr('data-count');
+  
+  $({ 
+    countNum: $this.text()
+  }).animate({
+    countNum: countTo
+  },
+
+  {
+    duration: 3000,
+    easing:'swing',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+  });  
+
+});
+
+counted = 1;
+  }
+
+});
+
 
 
 })
