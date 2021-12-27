@@ -1,5 +1,49 @@
 $(function(){
 
+$('.hero__slider').slick({
+    dots: true,
+    arrows: false,
+    fade: true
+  });
+  
+
+
+  var counted = 0;
+$(window).scroll(function() {
+
+  var oTop = $('.about__items').offset().top - window.innerHeight;
+  if (counted == 0 && $(window).scrollTop() > oTop) {
+  $('.about__counter').each(function() {
+  var $this = $(this),
+      countTo = $this.attr('data-count');
+  
+  $({ 
+    countNum: $this.text()
+  }).animate({
+    countNum: countTo
+  },
+
+  {
+    duration: 3000,
+    easing:'swing',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+  });  
+
+});
+
+counted = 1;
+  }
+
+});
+
+
+
   let popup = document.querySelector(".popup");
   let popupForm = document.querySelector(".popup__form");
   let popupBtn = document.querySelector(".map__btn");
@@ -42,6 +86,17 @@ $(function(){
 
 
 
+ var mixer = mixitup('.shop-content__products', {
+    selectors: {
+      target: '.product'
+    },
+    animation: {
+      duration: 300
+    }
+  });
+
+  
+
   $('.filter-price__input').ionRangeSlider({
     onStart: function (data) {
         $('.filter-price__from').text(data.from);
@@ -53,49 +108,6 @@ $(function(){
       },
   });
 
-
-  
-  $('.hero__slider,.clients__slider').slick({
-    dots: true,
-    arrows: false,
-    fade: true
-  });
-
-  
-
-var counted = 0;
-$(window).scroll(function() {
-
-  var oTop = $('.about__items').offset().top - window.innerHeight;
-  if (counted == 0 && $(window).scrollTop() > oTop) {
-  $('.about__counter').each(function() {
-  var $this = $(this),
-      countTo = $this.attr('data-count');
-  
-  $({ 
-    countNum: $this.text()
-  }).animate({
-    countNum: countTo
-  },
-
-  {
-    duration: 3000,
-    easing:'swing',
-    step: function() {
-      $this.text(Math.floor(this.countNum));
-    },
-    complete: function() {
-      $this.text(this.countNum);
-      //alert('finished');
-    }
-  });  
-
-});
-
-counted = 1;
-  }
-
-});
 
 
 
