@@ -5,6 +5,13 @@ $('.hero__slider').slick({
     arrows: false,
     fade: true
   });
+
+$('.clients__items').slick({
+    arrows: false,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1
+  });
   
 
 
