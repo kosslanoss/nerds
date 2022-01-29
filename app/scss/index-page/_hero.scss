@@ -31,10 +31,10 @@
     padding-right: 54px;
   }
 
-  &__img {
+  &__pic {
     max-width: 760px;
     width: 100%;
-    height: 430px;
+    height: 431px;
   }
 
   .slick-dots {
@@ -42,9 +42,14 @@
     top: 75vh;
     left: 50%;
     display: flex;
-
+    
     li {
       margin-right: 18px;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: scale(125%) translate(-3%, -3%);
+      }
 
       button {
         font-size: 0;

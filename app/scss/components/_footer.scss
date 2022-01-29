@@ -3,6 +3,7 @@
 
   &__inner {
     display: flex;
+    align-items: center;
   }
 
   &__title {
@@ -23,24 +24,56 @@
 
 .social {
   margin-right: 140px;
-
-  &__links {
-    display: flex;
-  }
+  display: flex;
 
   &__item:not(:last-child) {
     margin-right: 10px;
   }
 
-  &__icon {
+  &__link--vk {
+    background-image: url(../images/vk-icon.svg);
+    width: 26px;
+    height: 15px;
+
+    &:focus,
+    &:active {
+      background-image: url(../images/vk-icon-hover.svg);
+    }
+  }
+
+  &__link--fb {
+    background-image: url(../images/fb-icon.svg);
+    width: 12px;
+    height: 22px;
+
+    &:focus,
+    &:active {
+      background-image: url(../images/fb-icon-hover.svg);
+    }
+  }
+
+  &__link--instagram {
+    background-image: url(../images/insta-icon.svg);
+    width: 21px;
+    height: 21px;
+
+    &:focus,
+    &:active {
+      background-image: url(../images/insta-icon-hover.svg);
+    }
+  }
+
+  &__link {
+    background-repeat: no-repeat;
+    background-position: center center;
     border-radius: 50%;
-    padding: 28px;
+    padding: 28px 37px;
     background-color: $grey-light;
     color: $white;
     border: solid 2px transparent;
     width: 81px;
     height: 81px;
-    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s, background-image 0.3s;
 
     &:focus,
     &:active {

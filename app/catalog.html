@@ -30,7 +30,7 @@
               <a class="menu__link menu__link--active" href="#">Магазин</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Контакты</a>
+              <a class="menu__link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -274,17 +274,19 @@
       </div>
     </section>
   </main>
-  <section class="map" style="background-image: url(images/map.png);">
+  <section class="map" id="contacts" style="background-image: url(images/map.png);">
     <div class="container">
       <div class="map__data">
         <h4 class="map__name">
           Nёrds Design Studio
         </h4>
-        <p class="map__address">
-          191186, Санкт-Петербург, ул.Б. Конюшенная, д. 19/8
-        </p>
-        <a class="map__phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-        <button class="map__btn button">Напишите нам</button>
+        <address>
+          <p class="map__address">
+            191186, Санкт-Петербург, ул.Б. Конюшенная, д. 19/8
+          </p>
+          <a class="map__phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+        </address>
+        <a class="map__btn button">Напишите нам</a>
       </div>
     </div>
     <div class="popup">
@@ -301,7 +303,8 @@
             </label>
             <label class="popup__label">
               <span class="popup__label-desc">Ваш email:</span>
-              <input class="popup__input" type="email" name="mail" placeholder="email@example.com" required>
+              <input class="popup__input" type="email" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+                name="mail" placeholder="email@example.com" required>
             </label>
           </div>
           <label class="popup__label popup__label-text">
@@ -309,38 +312,33 @@
             <input class="popup__input popup__input-text" type="text" name="text" placeholder="В свободной форме"
               required>
           </label>
+          <button class="popup__btn-send button" type="submit">
+            Отправить
+          </button>
         </form>
-        <button class="popup__btn-send button" type="submit">
-          Отправить
-        </button>
       </div>
     </div>
   </section>
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
-        <div class="social">
-          <ul class="social__links">
-            <li class="social__item">
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#">
               <span class="sr-only">Перейти на страницу в вконтакте</span>
-              <a class="social__link--fb social__link" href="#">
-                <img class="social__icon" src="images/vk-icon.svg" alt="ссылка на вконтакте" width="12" height="22">
-              </a>
-            </li>
-            <li class="social__item">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="#">
               <span class="sr-only">Перейти на страницу в фейсбук</span>
-              <a class="social__link--fb social__link" href="#">
-                <img class="social__icon" src="images/fb-icon.svg" alt="ссылка на фейсбук" width="12" height="22">
-              </a>
-            </li>
-            <li class="social__item">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">
               <span class="sr-only">Перейти на страницу в инстаграмм</span>
-              <a class="social__link--instagram social__link" href="#">
-                <img class="social__icon" src="images/insta-icon.svg" alt="ссылка на инстаграмм" width="21" height="21">
-              </a>
-            </li>
-          </ul>
-        </div>
+            </a>
+          </li>
+        </ul>
         <div class="footer__banner">
           <div class="footer__title">
             <p>Давайте дружить, это выгодно!</p>

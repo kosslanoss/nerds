@@ -95,6 +95,7 @@
 
     &:focus {
       border-color: $title;
+      color: $title;
 
       &:invalid {
         border-color: $accent-darker;
