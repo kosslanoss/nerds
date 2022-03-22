@@ -11,6 +11,11 @@
     justify-content: space-between;
   }
 
+  &__content {
+    max-width: 370px;
+    width: 100%;
+  }
+
   &__title {
     font-size: 55px;
     font-weight: 500;
@@ -35,16 +40,16 @@
     max-width: 760px;
     width: 100%;
     height: 431px;
+    background-position: center;
   }
 
   .slick-dots {
     position: absolute;
     top: 75vh;
-    left: 50%;
+    left: calc(50% - 53px);
     display: flex;
     
     li {
-      margin-right: 18px;
       transition: transform 0.3s;
 
       &:hover {
@@ -71,6 +76,22 @@
         }
       }
     }
+
+    li:not(:last-child) {
+      margin-right: 18px;
+    }
   }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    &__pic {
+      display: none;
+    }
+  }
+  
+}
+
+@media (max-width: 576px) {
 
 }

@@ -77,6 +77,7 @@
   &__label-top {
     display: flex;
     justify-content: space-between;
+    max-width: 760px;
     margin-bottom: 35px;
   }
 
@@ -121,5 +122,80 @@
   &__btn-send {
     padding-left: 83px;
     padding-right: 83px;
+  }
+}
+
+@media (max-width: 992px) {
+  .popup {
+
+    &__wrapper {
+      padding: 60px 50px 85px;
+    }
+
+    &__title {
+      font-size: 38px;
+    }
+
+    &__label-top {
+      max-width: 100%;
+    }
+
+    &__label-text {
+      max-width: 100%;
+    }
+
+    &__btn-close {
+      right: 50px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .popup {
+    &__wrapper {
+      padding: 50px 25px 60px;
+    }
+
+    &__title {
+      font-size: 28px;
+    }
+    
+    &__btn-close {
+      right: 25px;
+      top: 35px;
+    }
+
+    &__label-top {
+      flex-wrap: wrap;
+    }
+
+    &__label {
+      max-width: 100%;
+      margin: 5px 0;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .popup {
+    &__title {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    &__input {
+      padding: 10px;
+    }
+
+    &__input-text {
+      padding: 10px 10px 70px;
+      margin-bottom: 25px;
+    }
+
+    &__btn-send {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }
