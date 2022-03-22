@@ -7,9 +7,11 @@ $accent-darkest: #D7373B;
 
 $grey-darkest: #666666;
 $grey-darker: #A6A6A6;
+$grey-dark: #4d4d4d;
 $grey: #C1C1C1;
 $grey-light: #E1E1E1;
 $grey-lightest: #EEEEEE;
+
 
 
 $white: #FFFFFF;
@@ -24,5 +26,28 @@ $yellow-darker: #EAB534;
 $yellow-darkest: #E5A722;
 
 $roboto: 'Roboto', sans-serif; 
+
+%roboto-400 {
+  font-family: 'Roboto-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%roboto-500 {
+  font-family: 'Roboto-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%roboto-700 {
+  font-family: 'Roboto-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
 
 

@@ -1,0 +1,365 @@
+.shop {
+  padding: 55px 0 60px;
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__filters {
+    max-width: 260px;
+    margin-right: 120px;
+  }
+}
+
+.filter__title {
+  @extend %roboto-700;
+  font-size: 18px;
+  color: $title;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.filter-price {
+  margin-bottom: 55px;
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__number {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+  }
+
+  &__from,
+  &__to {
+    background-color: $grey-lightest;
+    width: 80px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+  }
+}
+
+.irs--flat {
+  padding: 40px;
+  height: 80px;
+  background-color: $grey-lightest;
+  border-radius: 3px;
+
+  .irs-line {
+    top: 0;
+    height: 2px;
+    background-color: $grey;
+    border-radius: 0;
+
+  }
+
+  .irs-bar {
+    top: 40px;
+    height: 2px;
+    background-color: $green;
+    margin: 0 30px; 
+  }
+
+  .irs-handle {
+    background-image: url(../images/filter-price-roll.svg);
+    top: 30px;
+    width: 20px;
+    height: 23px;
+    margin: 0 30px;
+    padding-left: 21px;
+  }
+
+  .irs-handle>i:first-child {
+    display: none;
+  }
+
+  .irs-from,
+  .irs-to,
+  .irs-single,
+  .irs-min,
+  .irs-max {
+    display: none;
+  }
+}
+
+.filter-view {
+  margin-bottom: 45px;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 110px;
+  }
+
+  &__label {
+    cursor: pointer;
+  }
+
+  &__input {
+    @extend %checkbox-hidden;
+
+    &:checked+.filter-view__checkbox {
+      background-image: url(../images/radio-on.svg);
+      width: 25px;
+      height: 25px;
+      position: absolute;
+    }
+  }
+
+  &__checkbox {
+    width: 25px;
+    height: 25px;
+    background-image: url(../images/radio-off.svg);
+    position: absolute;
+    opacity: 40%;
+
+    &:hover {
+      opacity: 100%;
+    }
+  }
+
+  &__text {
+    padding-left: 35px;
+  }
+}
+
+.filter-features {
+  margin-bottom: 45px;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 190px;
+  }
+
+  &__label {
+    cursor: pointer;
+  }
+
+  &__input {
+    @extend %checkbox-hidden;
+
+    &:checked+.filter-features__checkbox {
+      background-image: url(../images/checkbox-on.svg);
+      width: 25px;
+      height: 23px;
+      position: absolute;
+    }
+  }
+
+  &__checkbox {
+    width: 23px;
+    height: 23px;
+    background-image: url(../images/checkbox-off.svg);
+    position: absolute;
+    opacity: 40%;
+
+    &:hover {
+      opacity: 100%;
+    }
+  }
+
+  &__text {
+    padding-left: 35px;
+  }
+}
+
+.shop-content {
+  max-width: 760px;
+  width: 100%;
+
+  &__filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+  }
+
+  &__filter-btn {
+    border: none;
+    text-transform: uppercase;
+    background-color: transparent;
+    opacity: 30%;
+    transition: opacity 0.3s;
+    font-size: 14px;
+
+    &:focus,
+    &:active {
+      opacity: 100%;
+    }
+
+    &:hover {
+      opacity: 60%;
+    }
+  }
+
+  &__filter-btn--active {
+    opacity: 100%;
+  }
+
+  &__filter-icon {
+    border: none;
+    text-transform: uppercase;
+    background-color: transparent;
+    opacity: 20%;
+    transition: opacity 0.3s;
+    
+    &:not(:last-child) {
+      padding-left: 40px;
+    }
+    
+    &:focus,
+    &:active {
+      opacity: 100%;
+      transition: fill 0.3s;
+
+      path {
+        fill: #231F20;
+      }
+    }
+
+    &:hover {
+      opacity: 100%;
+    }
+  }
+
+  &__products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.product {
+  margin-bottom: 30px;
+  
+  &__link-box {
+    position: absolute;
+    width: 360px;
+    height: 230px;
+    background-color: $grey-lightest;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  &__link {
+    margin-bottom: 12px;
+    @extend %roboto-700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $title;
+    transition: color 0.3s, opacity 0.3s;
+
+    &:focus,
+    &:active {
+      opacity: 30%;
+    }
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  &__text {
+    margin-bottom: 25px;
+    max-width: 250px;
+    text-align: center;
+    color: $grey-darkest;
+  }
+
+  &__btn {
+    max-width: 200px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__wrapper {
+    width: 360px;
+    height: 620px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-image: url(../images/products/browser-smooth.svg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: flex-end;
+    transition: background-image 0.3s,
+    box-shadow 0.3s;
+    position: relative;
+
+    &:hover {
+      background-image: url(../images/products/browser.svg);
+      box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
+      border: 1px solid transparent;
+
+      .product__link-box {
+        opacity: 100%;
+      }
+    }
+  }
+
+  &__img {
+    display: block;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    object-fit: cover;
+  }
+}
+
+.pagination {
+  display: flex;
+  padding-top: 25px;
+
+  &__list {
+    display: flex;
+  }
+
+  &__link {
+    width: 50px;
+    height: 50px;
+    background-color: $grey-lightest;
+    color: $title;
+    border-radius: 3px;
+    margin-right: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s,
+    opacity 0.5s;
+
+    &:hover {
+      background-color: $grey-light;
+    }
+
+    &:focus,
+    &:active {
+      background-color: $grey-darker;
+      box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+      opacity: 30%;
+    }
+  }
+
+  &__link--active {
+    background-color: $white;
+    border: 3px solid $grey;
+  }
+}

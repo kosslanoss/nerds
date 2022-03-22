@@ -13,11 +13,10 @@
     margin: 45px 0;
   }
 
-  &__item {
-    transition: opacity 0.5s, border-color 0.5s;
-    cursor: pointer;
-    appearance: none;
+  &__img {
+    transition: opacity 0.5s;
     opacity: 0.2;
+    margin: 0 auto;
 
     &:focus,
     &:active {
