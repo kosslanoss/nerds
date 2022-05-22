@@ -83,15 +83,20 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .hero {
-    &__pic {
-      display: none;
+    &__content {
+      height: auto;
+      background-image: url(../images/slide-2.jpg);
     }
   }
   
 }
 
-@media (max-width: 576px) {
-
+@media (max-width: 768px) {
+  .hero {
+    &__title {
+      padding-top: 0;
+    }
+  }  
 }
