@@ -61,10 +61,15 @@
     color: $title;
     padding-top: 245px;
     margin-bottom: 30px;
+    position: relative;
     
     &::before {
-      content: url(../images/about.png);
-      transform: translateY(-245px);
+      content: '';
+      background-image: url(../images/about.png);
+      width: 100%;
+      max-width: 360px;
+      height: 208px;
+      top: 0;
       position: absolute;
     }
   }
