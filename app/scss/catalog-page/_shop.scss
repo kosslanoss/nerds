@@ -65,7 +65,7 @@
     top: 40px;
     height: 2px;
     background-color: $green;
-    margin: 0 30px; 
+    margin: 0 27px; 
   }
 
   .irs-handle {
@@ -73,7 +73,7 @@
     top: 30px;
     width: 20px;
     height: 23px;
-    margin: 0 30px;
+    margin: 0 23px;
     padding-left: 21px;
   }
 
@@ -362,4 +362,108 @@
     background-color: $white;
     border: 3px solid $grey;
   }
+}
+
+@media (max-width: 1160px) {
+  .shop {
+    &__inner {
+      justify-content: space-between;
+    }
+
+    &__filters {
+      margin-right: 30px;
+    }
+  }  
+}
+
+@media (max-width: 1070px) {
+  .shop {
+    &__filters {
+      max-width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    &__filters-btn {
+      margin: auto 0 40px;
+    }
+  }
+
+  .filter {
+    &__item {
+      margin-right: 30px;
+    }
+  }
+
+  .filter-price {
+    &__title {
+      margin-bottom: 15px;
+    }  
+  }
+
+  .shop-content {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .shop-content {
+    &__products {
+      justify-content: center;
+    }
+  }  
+}
+
+@media (max-width: 576px) {
+  .top {
+    padding: 45px 0;
+
+    &__title {
+      font-size: 38px;
+    }
+  } 
+
+  .shop {
+    &__filters {
+      max-width: 100%;
+      justify-content: center;
+      margin: 0 auto;
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .shop-content {
+    &__filter {
+    flex-wrap: wrap;
+    }
+
+    &__filter-icon:not(:last-child) {
+      padding-left: 4px;
+    }
+  }
+
+  .filter {
+    &__item {
+      margin-right: 0;
+    }
+  }
+
+  .filter-price {
+    &__number {
+      justify-content: space-evenly;
+    } 
+  }  
+}
+
+@media (max-width: 460px) {
+  .pagination {
+    justify-content: center;
+
+    &__next {
+      display: none;
+    }
+  }  
 }

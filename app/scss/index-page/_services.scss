@@ -1,5 +1,5 @@
 .services {
-  padding: 80px 0 0;
+  padding: 80px 0 80px;
 
   & .container {
     border-bottom: solid 2px $grey-lightest;
@@ -8,7 +8,7 @@
   &__blocks {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 95px;
+    margin-bottom: 45px;
   }
 
   &__block {
@@ -93,4 +93,10 @@
       margin-bottom: 70px;
     }
   }  
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding: 45px 0 0;
+  }
 }
